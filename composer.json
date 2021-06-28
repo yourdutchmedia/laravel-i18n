@@ -1,0 +1,40 @@
+{
+    "name": "yourdutchmedia/laravel-i18n",
+    "description": "Simple for switching languages within laravel",
+    "keywords": [
+        "laravel",
+        "i18n"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/contracts": "^8.44",
+        "spatie/laravel-package-tools": "^1.9"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.18",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ydm\\I18N\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ydm\\I18N\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ydm\\I18N\\I18NServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
